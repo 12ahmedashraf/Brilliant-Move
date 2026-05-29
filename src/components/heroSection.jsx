@@ -15,9 +15,7 @@ export default function Hero()
             </div>
         </div>
         <div className="cta">
-            <div className="registerBox hover:bg-transparent border-2 border-transparent hover:border-accent hover:text-white transition-all duration-300 ease-in-out bg-accent px-2 py-1 rounded-xl cursor-pointer">
-                <Link href="" className="text-black text-2xl uppercase font-medium font-poppins hover:text-white transition-all duration-300 ease-in-out ">Make your Brilliant Move now</Link>
-            </div>
+                <Link href="" className="registerBox hover:bg-transparent border-2 border-transparent hover:border-accent bg-accent px-2 py-1 rounded-xl cursor-pointer text-black w-full h-fit text-2xl uppercase font-medium font-poppins hover:text-white transition-all duration-300 ease-in-out ">Make your Brilliant Move now</Link>
 
         </div>
     </div>

@@ -4,14 +4,14 @@ export default function About(){
         {
       num: "01",
       title: "Form a Team (1-4)",
-      desc: "Gather 1 to 4 members with different skills and interests. Coders, designers, writers, and entrepreneurs all belong here.",
+      desc: "form a team of 1 to 4 students with different skills and interests. All students belong here !",
       tags: ["14-18 years","1–4 members", "Any skill"],
       icon: <Users className="w-5 h-5 text-accent" />,
     },
     {
       num: "02",
       title: "Build your project & Learn",
-      desc: "Spend 5 weeks building across one of 4 tracks. Attend weekly workshops from founders, creators, and experts.",
+      desc: "Spend 5 weeks building a project in one of 4 tracks. Attend weekly workshops from founders, creators, and experts.",
       tags: ["Science & Engineering", "AI & programming" , "Visual arts & literature" , "Startups & business"],
       icon: <LayoutGrid className="w-5 h-5 text-accent" />,
     },
