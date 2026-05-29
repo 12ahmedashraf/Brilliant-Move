@@ -1,6 +1,7 @@
 import { Poppins,Montserrat } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/navBar";
+import GridCursorEffect from "@/components/gridcursor";
 const fMontserrat = Montserrat({
   
   variable: "--font-montserrat",
@@ -25,8 +26,9 @@ export default function RootLayout({ children }) {
       className={`${fMontserrat.variable} ${fPoppins.variable} min-h-screen antialiased `}
     >
       <body className="min-h-screen bg-grid-pattern flex flex-col font-poppins">
+          <GridCursorEffect />
         <NavBar/>
-        <main>{children}</main>
+        <main className="relative z-10">{children}</main>
         </body>
     </html>
   );

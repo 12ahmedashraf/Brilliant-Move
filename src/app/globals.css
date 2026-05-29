@@ -4,19 +4,13 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-.bg-grid-pattern {
-  background-color: #373739;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.25) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px);
-  background-size: 40px 40px;
-}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-poppins: var(--font-poppins);
   --font-header: var(--font-montserrat);
-  --color-accent: #ffde5934;
+  --color-accent: rgb(194, 163, 35);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,7 +21,15 @@
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+@layer utilities {
+  .bg-grid-pattern {
+    background-color: #0d0d0d;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
 }
