@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function NavBar()
 {
     return(
@@ -14,7 +15,7 @@ export default function NavBar()
                     <a href="" className="border-b-2 border-transparent hover:border-accent hover:scale-105 transition-all duration-300 ease-in-out">FAQ</a>
                 </div>
                 <div className="right-cta">
-                    <div className="registerBox hover:bg-transparent border-2 border-transparent hover:border-white transition-all duration-300 ease-in-out bg-accent px-2 py-1 rounded-xl cursor-pointer"><h1 className="text-white font-medium font-poppins ">Register-&gt;</h1></div>
+                    <div className="registerBox hover:bg-transparent border-2 border-transparent hover:border-white transition-all duration-300 ease-in-out bg-accent px-2 py-1 rounded-xl cursor-pointer"><Link href="" className="text-white font-medium font-poppins ">Register-&gt;</Link></div>
                 </div>
             </div>
         </div>
