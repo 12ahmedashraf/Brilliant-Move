@@ -5,6 +5,7 @@ import Vision from "@/components/Vision";
 import TimeLine from "@/components/Timeline";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import CTA from "@/components/CTA";
 export default function Home() {
   return (
     <div className="flex flex-col gap-20 md:gap-25">
@@ -13,7 +14,7 @@ export default function Home() {
       <TimeLine/>
       <Vision/>
       <FAQ/>
-      <Footer/>
+      <CTA/>
     </div>
   );
 }

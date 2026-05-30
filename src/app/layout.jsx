@@ -1,6 +1,7 @@
 import { Poppins,Montserrat } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/navBar";
+import Footer from "@/components/Footer";
 import GridCursorEffect from "@/components/gridcursor";
 const fMontserrat = Montserrat({
   
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         <NavBar/>
         <main className="relative z-10">{children}</main>
         </body>
+        <Footer/>
     </html>
   );
 }
