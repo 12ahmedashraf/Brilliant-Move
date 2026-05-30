@@ -30,8 +30,9 @@ export default function RootLayout({ children }) {
           <GridCursorEffect />
         <NavBar/>
         <main className="relative z-10">{children}</main>
-        </body>
         <Footer/>
+        </body>
+        
     </html>
   );
 }
