@@ -82,7 +82,7 @@ export default function Vision(){
                                                 <h1 className="block  font-header font-bold text-white text-lg mb-1.5 group-hover:text-accent transition-colors duration-300">
                                                     {v.title}
                                                 </h1>
-                                                <p className="text-white/50 text-sm leading-relaxed font-light">
+                                                <p className="text-white/50 text-sm leading-relaxed font-light font-poppins">
                                                     {v.desc}
                                                 </p>
                                             </div>
@@ -110,7 +110,7 @@ export default function Vision(){
                   "Work in a team, navigate disagreements, and ship under pressure",
                   "Be part of the first student innovation community",
                 ].map((point, i) => (
-                  <div key={i} className="flex items-start gap-4 text-white/60 text-sm md:text-base leading-relaxed font-light group">
+                  <div key={i} className="flex items-start gap-4 text-white/60 text-sm md:text-base leading-relaxed font-light group font-poppins">
                     <span className="text-accent/60 group-hover:text-accent group-hover:translate-x-1 transition-all duration-300 shrink-0 mt-0.5">
                       &rarr;
                     </span>
@@ -140,10 +140,10 @@ export default function Vision(){
                   {sdg.num}
                 </span>
                 <div>
-                  <strong className="block text-white text-sm font-bold leading-tight mb-1.5">
+                  <strong className="block text-white font-poppins text-sm font-bold leading-tight mb-1.5">
                     {sdg.title}
                   </strong>
-                  <span className="text-white/40 text-xs leading-relaxed block font-light group-hover:text-white/60 transition-colors">
+                  <span className="text-white/40 text-xs leading-relaxed block font-light group-hover:text-white/60 transition-colors font-poppins">
                     {sdg.desc}
                   </span>
                 </div>

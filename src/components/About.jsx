@@ -37,7 +37,7 @@ export default function About(){
             <div className="bg-accent h-1 w-1/2 rounded-full"/>
           </div>
           <div className="text">
-            <p className=" text-zinc-400 max-w-xl md:max-w-3xl font-light text-center  leading-relaxed px-3 md:px-0 text-base">Brilliant Move is a <span className="text-accent font-semibold">5-week 
+            <p className=" text-zinc-400 max-w-xl md:max-w-3xl font-light text-center font-poppins leading-relaxed px-3 md:px-0 text-base">Brilliant Move is a <span className="text-accent font-semibold">5-week 
               summer hackathon</span> for students aged 14–18. Teams of up to 4 build real projects 
               across 4 tracks, document their journey through a  <span className="text-accent font-semibold">very short film</span>, and compete in a 
               festival-style closing ceremony 
@@ -45,7 +45,7 @@ export default function About(){
           </div>
           <div className="inline-flex items-center gap-3 bg-accent/8 border border-accent/25 rounded-full px-5 py-2.5 mb-5">
           <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-          <span className="text-white/65 text-sm text-center">
+          <span className="text-white/65 text-sm text-center font-poppins">
             Build , Film and learn from workshops & mentorship 
           </span>
         </div>
@@ -65,7 +65,7 @@ export default function About(){
                   {step.title}
                 </div>
 
-                <p className="text-white/50 text-sm leading-relaxed font-light grow">
+                <p className="text-white/50 text-sm leading-relaxed font-light grow font-poppins">
                   {step.desc}
                 </p>
 

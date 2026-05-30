@@ -32,11 +32,11 @@ const faqs = [
     },
     {
         q:"Is Brilliant Move free?",
-        a: <>Completely<span className="text-accent font-semibold"> FREE.</span>The only thing we ask for is <span className="text-accent font-semibold">your commitment to your brilliant move</span></>
+        a: <>Completely<span className="text-accent font-semibold"> FREE. </span>The only thing we ask for is <span className="text-accent font-semibold">your commitment to your brilliant move</span></>
     },
     {
         q: "What are the workshops like?",
-        a: <>Every week throughout the hackathon there are <span className="text-accent font-semibold">workshops</span>led by real founders, creators, and experts. They&apos;re built around helping you make progress on your project, not generic lectures.</>
+        a: <>Every week throughout the hackathon there are <span className="text-accent font-semibold">workshops </span>led by real founders, creators, and experts. They&apos;re built around helping you make progress on your project, not generic lectures.</>
     },
     {
         q:"How are the winners selected?",
@@ -75,7 +75,7 @@ export default function FAQ()
                     ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
                 >
                   <div className="px-4 sm:px-5 pb-4 sm:pb-5">
-                    <div className="border-t border-white/5 pt-3 sm:pt-4 text-white/50 text-xs sm:text-sm leading-relaxed font-light">
+                    <div className="border-t font-poppins border-white/5 pt-3 sm:pt-4 text-white/50 text-xs sm:text-sm leading-relaxed font-light">
                       {faq.a}
                     </div>
                   </div>

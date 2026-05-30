@@ -62,13 +62,13 @@ export default function TimeLine(){
                             <h3 className="font-header font-bold text-white text-base mb-1.5">
                                 {date.title}
                             </h3>
-                            <p className="text-white/45 text-sm leading-relaxed font-light max-w-xl">
+                            <p className="text-white/45 text-sm leading-relaxed font-poppins font-light max-w-xl">
                                 {date.desc}
                             </p>
                             {date.weeks && (<div className="mt-3 ml-1 pl-4 border-l border-white/7 flex flex-col gap-2">
                   {date.weeks.map((w, j) => (
-                    <p key={j} className="text-white/35 text-xs leading-relaxed">
-                      <strong className="text-white/55 font-medium">{w.label} — </strong>
+                    <p key={j} className="text-white/35 text-xs leading-relaxed font-poppins">
+                      <strong className="text-white/55 font-medium font-poppins">{w.label} — </strong>
                       {w.detail}
                     </p>
                   ))}
@@ -76,7 +76,7 @@ export default function TimeLine(){
               )}
  
               {date.tag && (
-                <span className="inline-block mt-2.5 text-[0.68rem] px-3 py-0.5 rounded-full bg-accent/8 border border-accent/20 text-accent/70 font-medium">
+                <span className="inline-block mt-2.5 text-[0.68rem] px-3 py-0.5 font-poppins rounded-full bg-accent/8 border border-accent/20 text-accent/70 font-medium">
                   {date.tag}
                 </span>
               )

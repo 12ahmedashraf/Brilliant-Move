@@ -11,7 +11,7 @@ export default function Hero()
         <div className="text">
             <div className="type-heading flex flex-col items-center gap-10">
                 <div><TypeWriter/></div>
-                <p className="text-zinc-400 font-medium  text-lg text-center md:text-2xl">Build something incredible this summer, film your journey building it & compete!</p>
+                <p className="text-zinc-400 font-medium  text-md text-center font-poppins md:text-xl">Build something incredible this summer, film your journey building it & compete!</p>
             </div>
         </div>
         <div className="cta hover:border-accent bg-accent  registerBox hover:bg-transparent border-2 border-transparent  px-2 py-1 rounded-xl cursor-pointer max-w-md">
