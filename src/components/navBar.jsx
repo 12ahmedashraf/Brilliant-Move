@@ -19,8 +19,8 @@ export default function Navbar() {
 
   const navLinks = [
     { label: "About",    href: "#about"    },
+    { label: "Timeline", href: "#timeline" },  
     { label: "Vision",   href: "#vision"   },
-    { label: "Timeline", href: "#timeline" },
     { label: "FAQ",      href: "#faq"      },
   ];
 
