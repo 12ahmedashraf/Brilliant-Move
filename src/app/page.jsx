@@ -5,7 +5,7 @@ import Vision from "@/components/Vision";
 import TimeLine from "@/components/Timeline";
 export default function Home() {
   return (
-    <div className="flex flex-col gap-35">
+    <div className="flex flex-col gap-20 md:gap-25">
       <Hero/>
       <About/>
       <TimeLine/>

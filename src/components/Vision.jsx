@@ -56,7 +56,7 @@ const sdgs = [
 
 export default function Vision(){
     return(
-        <section id="vision" className="p-6 relative">
+        <section id="vision" className="px-6  relative">
             <div className="max-w-6xl mx-auto relative z-10 ">
                 <div className="flex justify-center">
                 <div className="w-fit heading-about flex flex-col items-center gap-2 justify-center">
@@ -66,7 +66,7 @@ export default function Vision(){
                 </div>
                 <div className="grid grid-cols-1 gap-12 mb-10">
                     <div>
-                        <p className="text-accent text-xs font-header font-black uppercase tracking-widest mb-8">
+                        <p className="text-accent text-xs font-header font-black uppercase tracking-widest mt-10 md:mt-0 mb-8">
                             what we stand for
                         </p>
                         <div className="flex flex-col gap-2">

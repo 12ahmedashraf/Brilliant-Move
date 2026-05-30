@@ -11,7 +11,7 @@ const dates = [
         date: "June 29 - August 3",
         title: "The 5 week Hackathon",
         desc: "The Brilliant Move Hackathon. Build, learn, improve and document every step of your journey with 2 expert workshops every week.",
-        tag: null,
+        tag: "2 workshops a week",
         weeks:[
       { label: "Week 1", detail: "Ideation. Define your problem, validate your idea, shape your vision." },
       { label: "Weeks 2–4", detail: "Building. Deep work on your project." },
@@ -38,7 +38,7 @@ const dates = [
 ];
 export default function TimeLine(){
     return(
-        <section id="timeline" className="p-6">
+        <section id="timeline" className="px-6 ">
             <div className="max-w-4xl mx-auto">
                 <div className="flex heading flex-col gap-3 mb-10">
                     <h2 className="font-header font-black uppercase text-white text-4xl md:text-5xl leading-none">
@@ -47,11 +47,10 @@ export default function TimeLine(){
                     <div className="h-1 w-16 rounded-full bg-accent"/>
                 </div>
                 <div className="relative pl-8">
-                    <div className="absolute-left-[7px] top-1.5 bottom-1.5 w-9.5 rounded-full bg-gradient-to-b-from-accent to-accent/10"/>
                     {dates.map((date,i)=>(
                         <div key={i} className="relative pb-10 last:pb-0 group">
                              <div
-                            className={`absolute -left-5.25 top-1 w-4 h-4 rounded-full border-2 transition-all duration-300
+                            className={`absolute -left-8 top-1 w-4 h-4 rounded-full border-2 transition-all duration-300
                             ${date.active
                                 ? "border-accent bg-accent shadow-[0_0_12px_rgba(255,222,89,0.4)]"
                                 : "border-accent/40 bg-[#0d0d0d] group-hover:border-accent group-hover:bg-accent/15"

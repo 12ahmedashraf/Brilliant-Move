@@ -33,11 +33,11 @@ export default function About(){
     return (
         <section id="#about" className="flex flex-col items-center gap-10   max-w-7xl mx-auto">
           <div className="heading-about flex flex-col items-center gap-2">
-            <h1 className="text-white font-header font-black uppercase text-4xl">What&apos;s brilliant Move?</h1>
+            <h1 className="text-white font-header font-black uppercase text-center text-xl md:text-4xl">What&apos;s brilliant Move?</h1>
             <div className="bg-accent h-1 w-1/2 rounded-full"/>
           </div>
           <div className="text">
-            <p className=" text-zinc-400 max-w-3xl font-light text-center  leading-relaxed text-base">Brilliant Move is a <span className="text-accent font-semibold">5-week 
+            <p className=" text-zinc-400 max-w-xl md:max-w-3xl font-light text-center  leading-relaxed px-3 md:px-0 text-base">Brilliant Move is a <span className="text-accent font-semibold">5-week 
               summer hackathon</span> for students aged 14–18. Teams of up to 4 build real projects 
               across 4 tracks, document their journey through a  <span className="text-accent font-semibold">very short film</span>, and compete in a 
               festival-style closing ceremony 
@@ -45,7 +45,7 @@ export default function About(){
           </div>
           <div className="inline-flex items-center gap-3 bg-accent/8 border border-accent/25 rounded-full px-5 py-2.5 mb-5">
           <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-          <span className="text-white/65 text-sm">
+          <span className="text-white/65 text-sm text-center">
             Build , Film and learn from workshops & mentorship 
           </span>
         </div>

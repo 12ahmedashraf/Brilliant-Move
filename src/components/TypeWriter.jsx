@@ -56,7 +56,7 @@ export default function TypeWriter()
         return () => clearTimeout(timeout);
     },[phase]);
     return (
-        <span className="inline-flex items-baseline gap-0.5 font-header uppercase text-white font-black md:text-7xl">
+        <span className="inline-flex items-baseline gap-0.5 font-header uppercase text-white font-black text-center text-2xl md:text-7xl">
       {displayed}
       <span
         style={{
