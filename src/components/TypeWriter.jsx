@@ -1,8 +1,9 @@
 "use client"
 import { useRef,useEffect,useState} from "react"
 const sentences = [
-    "Build , Film & compete !",
+    "Build , Film & compete",
     "Make your Brilliant Move",
+    "Turn your ambition into reality",
 ];
 const ts = 90;
 const es = 90;
