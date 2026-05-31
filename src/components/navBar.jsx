@@ -48,7 +48,7 @@ export default function Navbar() {
           </div>
           <div className="hidden md:block">
             <Link
-              href=""
+              href="/register"
               className="font-poppins font-medium text-black bg-accent px-4 py-2 rounded-xl border-2 border-accent hover:bg-transparent hover:text-white transition-all duration-300 ease-in-out"
             >
               Register →
