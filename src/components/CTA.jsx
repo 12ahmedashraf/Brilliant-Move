@@ -15,7 +15,7 @@ export default function CTA()
                 </div>
                 <div className="flex flex-col sm:flex-row items-center gap-10 w-full sm:w-auto">
                     <Link
-                     href=""
+                     href="/register"
                      className="w-full  sm:w-auto text-center font-poppins font-semibold uppercase text-sm sm:text-base tracking-wide
               px-8 py-3.5 rounded-xl
               bg-accent text-black border-2 border-accent
@@ -24,16 +24,7 @@ export default function CTA()
           >
             Participate -&gt;
                     </Link>
-           <Link
-                     href=""
-                     className="w-full  sm:w-auto text-center font-poppins font-semibold uppercase text-sm sm:text-base tracking-wide
-              px-8 py-3.5 rounded-xl
-              bg-accent text-black border-2 border-accent
-              hover:bg-transparent hover:text-white hover:border-white
-              transition-all duration-300 ease-in-out"
-          >
-            Become a Sponsor
-                    </Link>
+          
                 </div>
             </div>
         </section>

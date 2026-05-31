@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaInstagram, FaTiktok, FaLinkedin } from "react-icons/fa6";
 const navLinks = [
-    {label:"About",href:"#about"},
-    {label:"TimeLine",href:"#timeline"},
-    {label:"Vision",href:"#vision"},
-    {label:"FAQ",href:"#faq"},
-    {label:"Register",href:""},
+    {label:"About",href:"/#about"},
+    {label:"TimeLine",href:"/#timeline"},
+    {label:"Vision",href:"/#vision"},
+    {label:"FAQ",href:"/#faq"},
+    {label:"Register",href:"/register"},
 ];
 const socials = [
     { label: "Instagram",href:"#",icon:<FaInstagram className="w-4 h-4"/>},

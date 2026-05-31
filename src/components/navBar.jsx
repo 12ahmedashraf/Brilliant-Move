@@ -83,7 +83,7 @@ export default function Navbar() {
         </div>
 
         <Link
-          href=""
+          href="/register"
           onClick={toggleMenu}
           className="mt-4 font-poppins font-medium text-black bg-accent px-8 py-3 rounded-xl border-2 border-accent hover:bg-transparent hover:text-white transition-all duration-300 text-lg"
         >

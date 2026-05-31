@@ -31,7 +31,7 @@ export default function About(){
     },
     ];
     return (
-        <section id="#about" className="flex flex-col items-center gap-10   max-w-7xl mx-auto">
+        <section id="about" className="flex flex-col items-center gap-10   max-w-7xl mx-auto">
           <div className="heading-about flex flex-col items-center gap-2">
             <h1 className="text-white font-header font-black uppercase text-center text-xl md:text-4xl">What&apos;s brilliant Move?</h1>
             <div className="bg-accent h-1 w-1/2 rounded-full"/>
