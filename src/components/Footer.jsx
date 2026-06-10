@@ -9,9 +9,9 @@ const navLinks = [
     {label:"Register",href:"/register"},
 ];
 const socials = [
-    { label: "Instagram",href:"#",icon:<FaInstagram className="w-4 h-4"/>},
-    {label: "TikTok",href:"#",icon:<FaTiktok className="w-4 h-4"/>},
-    {label: "LinkedIn",href:"#",icon:<FaLinkedin className="w-4 h-4"/>},
+    { label: "Instagram",href:"https://www.instagram.com/brilliantmove_hackathon/",icon:<FaInstagram className="w-4 h-4"/>},
+    {label: "TikTok",href:"https://www.tiktok.com/@brilliantmove_hackathon",icon:<FaTiktok className="w-4 h-4"/>},
+    {label: "LinkedIn",href:"https://www.linkedin.com/company/brilliantmove/",icon:<FaLinkedin className="w-4 h-4"/>},
 ];
 export default function Footer(){
     return (
