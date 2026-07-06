@@ -230,7 +230,7 @@ export function AdminClient({
                 + Add Team
               </button>
               {showAddTeam && (
-                <div className="absolute mt-2 right-0 z-10 w-72 border border-white/10 backdrop-blur-md bg-black/90 rounded-xl p-4">
+                <div className="absolute mt-2 right-0 z-60 w-72 border border-white/10 backdrop-blur-md bg-black/90 rounded-xl p-4">
                   <AddTeamForm router={router} onClose={() => setShowAddTeam(false)} />
                 </div>
               )}
@@ -286,7 +286,7 @@ export function AdminClient({
               <summary className="text-xs font-poppins text-accent border border-accent/30 px-3 py-1.5 rounded-lg cursor-pointer hover:bg-accent/10 transition-colors list-none">
                 + Add Week
               </summary>
-              <div className="absolute mt-2 right-0 z-10 w-72 border border-white/10 backdrop-blur-md bg-black/90 rounded-xl p-4">
+              <div className="absolute mt-2 right-0 z-60 w-72 border border-white/10 backdrop-blur-md bg-black/90 rounded-xl p-4">
                 <form action={async (fd) => { await createWeek(fd); router.refresh(); }} className="flex flex-col gap-2">
                   <input name="week_number" type="number" placeholder="Week #" required className="rounded-lg bg-black/40 border border-white/10 px-3 py-2 text-white text-sm font-poppins outline-none focus:border-accent transition-colors placeholder:text-white/30" />
                   <input name="title" placeholder="Title" required className="rounded-lg bg-black/40 border border-white/10 px-3 py-2 text-white text-sm font-poppins outline-none focus:border-accent transition-colors placeholder:text-white/30" />
@@ -360,7 +360,7 @@ export function AdminClient({
                           <summary className="text-[0.6rem] font-header font-black uppercase tracking-widest text-accent border border-accent/30 px-2 py-1 rounded-lg cursor-pointer hover:bg-accent/10 transition-colors list-none">
                             + Add
                           </summary>
-                          <div className="absolute mt-1 right-0 z-10 w-64 border border-white/10 backdrop-blur-md bg-black/90 rounded-xl p-3">
+                          <div className="absolute mt-1 right-0 z-60 w-64 border border-white/10 backdrop-blur-md bg-black/90 rounded-xl p-3">
                             <form action={async (fd) => { await addWorkshop(fd); router.refresh(); }} className="flex flex-col gap-2">
                               <input type="hidden" name="weekId" value={week.id} />
                               <input name="workshop_number" type="number" placeholder="# (1 or 2)" required className="rounded-lg bg-black/40 border border-white/10 px-2 py-1.5 text-white text-xs font-poppins outline-none focus:border-accent transition-colors placeholder:text-white/30" />
@@ -407,7 +407,7 @@ export function AdminClient({
                           <summary className="text-[0.6rem] font-header font-black uppercase tracking-widest text-accent border border-accent/30 px-2 py-1 rounded-lg cursor-pointer hover:bg-accent/10 transition-colors list-none">
                             + Add
                           </summary>
-                          <div className="absolute mt-1 right-0 z-10 w-64 border border-white/10 backdrop-blur-md bg-black/90 rounded-xl p-3">
+                          <div className="absolute mt-1 right-0 z-60 w-64 border border-white/10 backdrop-blur-md bg-black/90 rounded-xl p-3">
                             <form action={async (fd) => { await addTask(fd); router.refresh(); }} className="flex flex-col gap-2">
                               <input type="hidden" name="weekId" value={week.id} />
                               <input name="title" placeholder="Task title" required className="rounded-lg bg-black/40 border border-white/10 px-2 py-1.5 text-white text-xs font-poppins outline-none focus:border-accent transition-colors placeholder:text-white/30" />
