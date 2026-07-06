@@ -145,7 +145,7 @@ export default async function DashboardPage({ searchParams }) {
         {/* Badge + Points + Progress */}
         <div className="border border-white/10 backdrop-blur-md bg-black/20 rounded-2xl p-5 md:p-6">
           <div className="flex items-center gap-4 md:gap-5 mb-4">
-            <div className="text-4xl md:text-5xl shrink-0 leading-none">{CHESS_GLYPH[badge?.chess_piece] || "♙"}</div>
+            <div className="text-4xl md:text-5xl shrink-0 leading-none text-white">{CHESS_GLYPH[badge?.chess_piece] || "♙"}</div>
             <div className="min-w-0 flex-1">
               <p className="text-white/40 text-xs font-header font-black uppercase tracking-widest">Current Badge</p>
               <p className="font-header font-bold text-white text-lg md:text-xl">{badge?.name || "Pawn"}</p>
