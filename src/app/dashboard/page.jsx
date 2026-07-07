@@ -77,11 +77,12 @@ export default async function DashboardPage({ searchParams }) {
   let weekInquiries = [];
 
   if (activeWeek) {
-    const [{ data: w }, { data: t }] = await Promise.all([
+   const [{ data: w }, { data: t }] = await Promise.all([
       supabaseAdmin
         .from("workshops")
         .select("*")
         .eq("week_id", activeWeek.id)
+        .or(`track.is.null,track.eq.${team.track}`)
         .order("workshop_number", { ascending: true }),
       supabaseAdmin
         .from("tasks")

@@ -362,25 +362,31 @@ export function AdminClient({
                           </summary>
                           <div className="absolute mt-1 right-0 z-60 w-64 border border-white/10 backdrop-blur-md bg-black/90 rounded-xl p-3">
                             <form action={async (fd) => { await addWorkshop(fd); router.refresh(); }} className="flex flex-col gap-2">
-                              <input type="hidden" name="weekId" value={week.id} />
-                              <input name="workshop_number" type="number" placeholder="# (1 or 2)" required className="rounded-lg bg-black/40 border border-white/10 px-2 py-1.5 text-white text-xs font-poppins outline-none focus:border-accent transition-colors placeholder:text-white/30" />
-                              <input name="title" placeholder="Workshop title" required className="rounded-lg bg-black/40 border border-white/10 px-2 py-1.5 text-white text-xs font-poppins outline-none focus:border-accent transition-colors placeholder:text-white/30" />
-                              <input name="speaker" placeholder="Speaker" className="rounded-lg bg-black/40 border border-white/10 px-2 py-1.5 text-white text-xs font-poppins outline-none focus:border-accent transition-colors placeholder:text-white/30" />
-                              <input name="recording_url" placeholder="Recording URL" className="rounded-lg bg-black/40 border border-white/10 px-2 py-1.5 text-white text-xs font-poppins outline-none focus:border-accent transition-colors placeholder:text-white/30" />
-                              <button type="submit" className="bg-accent text-black text-xs font-poppins font-semibold py-1.5 rounded-lg hover:opacity-90 transition-all">
-                                Add Workshop
-                              </button>
-                            </form>
+  <input type="hidden" name="weekId" value={week.id} />
+  <input name="workshop_number" type="number" placeholder="# (1 or 2)" required className="rounded-lg bg-black/40 border border-white/10 px-2 py-1.5 text-white text-xs font-poppins outline-none focus:border-accent transition-colors placeholder:text-white/30" />
+  <input name="title" placeholder="Workshop title" required className="rounded-lg bg-black/40 border border-white/10 px-2 py-1.5 text-white text-xs font-poppins outline-none focus:border-accent transition-colors placeholder:text-white/30" />
+  <select name="track" defaultValue="" className="rounded-lg bg-black/40 border border-white/10 px-2 py-1.5 text-white text-xs font-poppins outline-none focus:border-accent transition-colors">
+    <option value="">All Tracks</option>
+    {TRACKS.map((t) => <option key={t} value={t}>{t}</option>)}
+  </select>
+  <input name="speaker" placeholder="Speaker" className="rounded-lg bg-black/40 border border-white/10 px-2 py-1.5 text-white text-xs font-poppins outline-none focus:border-accent transition-colors placeholder:text-white/30" />
+  <input name="recording_url" placeholder="Recording URL" className="rounded-lg bg-black/40 border border-white/10 px-2 py-1.5 text-white text-xs font-poppins outline-none focus:border-accent transition-colors placeholder:text-white/30" />
+  <button type="submit" className="bg-accent text-black text-xs font-poppins font-semibold py-1.5 rounded-lg hover:opacity-90 transition-all">
+    Add Workshop
+  </button>
+</form>
                           </div>
                         </details>
                       </div>
                       <div className="flex flex-col gap-1">
                         {workshopsByWeek[week.id]?.map((ws) => (
-                          <div key={ws.id} className="flex items-center gap-2 text-sm font-poppins text-white/70 bg-white/5 rounded-lg px-3 py-2">
-                            <span className="text-white/40 shrink-0 font-mono text-xs">WS{ws.workshop_number}</span>
-                            <span className="truncate flex-1">{ws.title}</span>
-                            {ws.speaker && <span className="text-white/40 hidden xs:inline shrink-0 text-xs">({ws.speaker})</span>}
-                            <div className="flex items-center gap-1.5 shrink-0">
+  <div key={ws.id} className="flex items-center gap-2 text-sm font-poppins text-white/70 bg-white/5 rounded-lg px-3 py-2">
+    <span className="text-white/40 shrink-0 font-mono text-xs">WS{ws.workshop_number}</span>
+    <span className="truncate flex-1">{ws.title}</span>
+    <span className="shrink-0 text-[0.55rem] font-header font-black uppercase tracking-widest text-accent/70 border border-accent/20 px-1.5 py-0.5 rounded">
+      {ws.track || "All Tracks"}
+    </span>
+    {ws.speaker && <span className="text-white/40 hidden xs:inline shrink-0 text-xs">({ws.speaker})</span>}    <div className="flex items-center gap-1.5 shrink-0">
                               {ws.recording_url ? (
                                 <a href={ws.recording_url} target="_blank" className="text-accent underline text-xs hover:text-white transition-colors">recording</a>
                               ) : (

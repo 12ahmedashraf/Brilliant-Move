@@ -64,6 +64,7 @@ export async function addWorkshop(formData) {
   const title = String(formData.get("title") || "").trim();
   const speaker = String(formData.get("speaker") || "").trim();
   const recordingUrl = String(formData.get("recording_url") || "").trim();
+  const track = String(formData.get("track") || "").trim();
 
   if (!weekId || !workshopNumber || !title) return { error: "Required fields missing." };
 
@@ -74,8 +75,9 @@ export async function addWorkshop(formData) {
       title,
       speaker: speaker || null,
       recording_url: recordingUrl || null,
+      track: track || null,
     },
-    { onConflict: "week_id,workshop_number" }
+    { onConflict: "week_id,workshop_number,track" }
   );
 
   if (error) return { error: error.message };
