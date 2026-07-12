@@ -48,10 +48,10 @@ export default function Navbar() {
           </div>
           <div className="hidden md:block">
             <Link
-              href="/register"
+              href="/dashboard"
               className="font-poppins font-medium text-black bg-accent px-4 py-2 rounded-xl border-2 border-accent hover:bg-transparent hover:text-white transition-all duration-300 ease-in-out"
             >
-              Register →
+              Dashboard
             </Link>
           </div>
           <button
@@ -83,11 +83,11 @@ export default function Navbar() {
         </div>
 
         <Link
-          href="/register"
+          href="/dashboard"
           onClick={toggleMenu}
           className="mt-4 font-poppins font-medium text-black bg-accent px-8 py-3 rounded-xl border-2 border-accent hover:bg-transparent hover:text-white transition-all duration-300 text-lg"
         >
-          Register →
+            Dashboard
         </Link>
       </div>
     </>
