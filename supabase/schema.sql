@@ -22,12 +22,13 @@ CREATE TABLE weeks (
 CREATE TABLE workshops (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   week_id UUID REFERENCES weeks(id) ON DELETE CASCADE,
+  track TEXT,
   workshop_number INTEGER NOT NULL,
   title TEXT NOT NULL,
   speaker TEXT,
   recording_url TEXT,
   created_at TIMESTAMPTZ DEFAULT now(),
-  UNIQUE(week_id, workshop_number)
+  UNIQUE(week_id, workshop_number, track)
 );
 
 CREATE TABLE tasks (

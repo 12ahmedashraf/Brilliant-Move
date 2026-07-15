@@ -60,7 +60,8 @@ export default async function DashboardPage({ searchParams }) {
 
   const nextBadge = (badges || []).find((b) => b.points_threshold > team.points);
 
-  const requestedWeek = searchParams?.week ? Number(searchParams.week) : null;
+  const sp = await searchParams;
+  const requestedWeek = sp?.week ? Number(sp.week) : null;
   const { data: weeks } = await supabaseAdmin
     .from("weeks")
     .select("*")
@@ -118,7 +119,6 @@ export default async function DashboardPage({ searchParams }) {
   return (
     <div className="min-h-screen px-4 py-8 md:py-12">
       <div className="max-w-4xl mx-auto flex flex-col gap-6 md:gap-8">
-        {/* Header */}
         <div className="flex items-center justify-between flex-wrap gap-4">
           <div>
             <h1 className="font-header font-black uppercase text-white text-2xl md:text-3xl">
@@ -143,7 +143,6 @@ export default async function DashboardPage({ searchParams }) {
           </div>
         </div>
 
-        {/* Badge + Points + Progress */}
         <div className="border border-white/10 backdrop-blur-md bg-black/20 rounded-2xl p-5 md:p-6">
           <div className="flex items-center gap-4 md:gap-5 mb-4">
             <div className="text-4xl md:text-5xl shrink-0 leading-none text-white">{CHESS_GLYPH[badge?.chess_piece] || "♙"}</div>
@@ -165,7 +164,6 @@ export default async function DashboardPage({ searchParams }) {
           )}
         </div>
 
-        {/* Task progress summary */}
         {tasks.length > 0 && (
           <div className="grid grid-cols-3 gap-3">
             <div className="border border-white/10 backdrop-blur-md bg-black/20 rounded-xl p-3 md:p-4 text-center">
@@ -183,7 +181,6 @@ export default async function DashboardPage({ searchParams }) {
           </div>
         )}
 
-        {/* Week selector */}
         <div>
           <div className="flex items-center gap-2 mb-3">
             <h2 className="text-accent text-xs font-header font-black uppercase tracking-widest">Week</h2>
@@ -215,7 +212,6 @@ export default async function DashboardPage({ searchParams }) {
               </p>
             </div>
 
-            {/* Workshops */}
             <div>
               <div className="flex items-center gap-2 mb-3">
                 <h3 className="text-accent text-xs font-header font-black uppercase tracking-widest">Workshops</h3>
@@ -259,7 +255,6 @@ export default async function DashboardPage({ searchParams }) {
               </div>
             </div>
 
-            {/* Tasks */}
             <div>
               <div className="flex items-center gap-2 mb-3">
                 <h3 className="text-accent text-xs font-header font-black uppercase tracking-widest">Weekly Missions</h3>
@@ -346,7 +341,6 @@ export default async function DashboardPage({ searchParams }) {
               </div>
             </div>
 
-            {/* Inquiries */}
             <div>
               <div className="flex items-center gap-2 mb-3">
                 <h3 className="text-accent text-xs font-header font-black uppercase tracking-widest">Ask a Question</h3>
